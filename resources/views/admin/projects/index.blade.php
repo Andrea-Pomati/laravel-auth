@@ -24,7 +24,7 @@
             <td>{{$project->title}}</td>
             <td>{{$project->content}}</td>
             <td>{{$project->slug}}</td>
-            <td><a href="{{route('admin.projects.show', $project->id)}}"><i class="fa-solid fa-magnifying-glass"></i></a></td>
+            <td><a href="{{route('admin.projects.show', $project->slug)}}"><i class="fa-solid fa-magnifying-glass"></i></a></td>
         </tr>
         @endforeach
     </tbody>
