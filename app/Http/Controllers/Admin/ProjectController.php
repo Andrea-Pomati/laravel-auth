@@ -15,7 +15,7 @@ class ProjectController extends Controller
      */
     public function index()
     {
-        return('ciao');
+        return('Sei nella index dei projects');
     }
 
     /**
@@ -25,7 +25,7 @@ class ProjectController extends Controller
      */
     public function create()
     {
-        //
+        return('Sei nella create');
     }
 
     /**
