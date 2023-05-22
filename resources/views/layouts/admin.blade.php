@@ -96,7 +96,7 @@
                 Dashboard
             </div>
             <div class="list-group list-group-flush">
-                <a href="" class="list-group-item list-group-item-action">Home</a>
+                <a href="{{route('admin.dashboard.home')}}" class="list-group-item list-group-item-action">Home</a>
             </div>
         </div>
     </aside>
