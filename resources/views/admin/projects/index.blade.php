@@ -2,7 +2,7 @@
 
 @section('content')
 <h1 class="text-center">Tutti i progetti</h1>
-<table class="mt-5 table table-striped">
+<table class="mt-5 table table-striped mb-4">
     <thead>
         <th>
             Titolo
@@ -29,4 +29,11 @@
         @endforeach
     </tbody>
 </table>    
+
+<div class="d-flex justify-content-around">
+    <div class="btn btn-primary">
+        Aggiungi un progetto
+    </div>
+</div>
+
 @endsection
