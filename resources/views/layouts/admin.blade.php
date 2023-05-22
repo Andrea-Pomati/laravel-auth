@@ -89,9 +89,24 @@
             </div>
         </nav>
 
-        <main class="container">
-            @yield('content')
-        </main>
+<div id="admin-layout">
+    <aside id="admin-sidebar">
+        <div class="card">
+            <div class="card-header">
+                Dashboard
+            </div>
+            <div class="list-group list-group-flush">
+                <a href="" class="list-group-item list-group-item-action">Home</a>
+            </div>
+        </div>
+    </aside>
+
+    <main class="container">
+        @yield('content')
+    </main>
+
+</div>
+       
     </div>
 </body>
 
