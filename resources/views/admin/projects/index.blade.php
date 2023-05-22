@@ -1,7 +1,7 @@
 @extends('layouts/admin')
 
 @section('content')
-
+<h1 class="text-center">Tutti i progetti</h1>
 <table class="mt-5 table table-striped">
     <thead>
         <th>
