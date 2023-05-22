@@ -31,9 +31,9 @@
 </table>    
 
 <div class="d-flex justify-content-around">
-    <div class="btn btn-primary">
+    <a href="{{route('admin.projects.create')}}" class="btn btn-primary">
         Aggiungi un progetto
-    </div>
+    </a>
 </div>
 
 @endsection
