@@ -100,7 +100,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card {{str_contains(Route::currentRouteName(), 'projects.') ? 'border-primary' : ''}}">
             <div class="card-header">
                 Progetti
             </div>
