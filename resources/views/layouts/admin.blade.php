@@ -99,6 +99,15 @@
                 <a href="{{route('admin.dashboard.home')}}" class="list-group-item list-group-item-action">Home</a>
             </div>
         </div>
+
+        <div class="card">
+            <div class="card-header">
+                Progetti
+            </div>
+            <div class="list-group list-group-flush">
+                <a href="{{route('admin.projects.index')}}" class="list-group-item list-group-item-action">Tutti i progetti</a>
+            </div>
+        </div>
     </aside>
 
     <main class="container">
