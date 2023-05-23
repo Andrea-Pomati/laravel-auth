@@ -1,3 +1,15 @@
+@php
+
+
+function routeNameContains($string) {
+
+return str_contains(Route::currentRouteName(), $string );
+}
+
+@endphp
+
+
+
 <!doctype html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}" data-bs-theme="dark">
 
@@ -99,9 +111,9 @@
                 <a href="{{route('admin.dashboard.home')}}" class="list-group-item list-group-item-action">Home</a>
             </div>
         </div>
-
-        <div class="card {{str_contains(Route::currentRouteName(), 'projects.') ? 'border-primary' : ''}}">
-            <div class="card-header">
+        {{-- Route::currentRouteName() --}}
+        <div class="card {{ routeNameContains('projects.') ? 'border-primary' : ''}}">
+            <div class="card-header {{ routeNameContains('projects.') ? 'text-primary' : ''}}">
                 Progetti
             </div>
             <div class="list-group list-group-flush">
