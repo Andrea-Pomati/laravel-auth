@@ -28,9 +28,9 @@
             </div>
             @enderror
         </div>
-
         <button class="btn btn-primary" type="submit">Modifica</button>
     </form>
+    
 </div>
 
 @endsection
