@@ -29,6 +29,12 @@
 
 <div class="d-flex justify-content-around">
     <a href="{{route('admin.projects.edit', $project)}}" class="btn btn-primary">Modifica il progetto</a>
+
+    <form action="{{route('admin.projects.destroy', $project)}}" method="POST">
+        @csrf
+        @method('DELETE')
+        <button type="submit" class="btn btn-danger">Elimina il progetto</button>
+    </form>
 </div>
 
 
