@@ -87,7 +87,16 @@ class ProjectController extends Controller
      */
     public function update(Request $request, Project $project)
     {
-        //
+        $formData = $request->all();
+
+        $this->validation($formData);
+
+        //$project->slug = Str::slug($formData['title'], '-' );
+        $formData['slug'] = Str::slug($formData['title'], '-' );
+
+        $project->update($formData);
+
+        return redirect()->route('admin.projects.show', $project);
     }
 
     /**
@@ -98,7 +107,9 @@ class ProjectController extends Controller
      */
     public function destroy(Project $project)
     {
-        //
+        $project->delete();
+
+        return redirect()->route('admin.projects.index');
     }
 
 
