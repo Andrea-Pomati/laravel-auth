@@ -1,6 +1,6 @@
 @php
 
-
+$routeName = Route::currentRouteName();
 function routeNameContains($string) {
 
 return str_contains(Route::currentRouteName(), $string );
@@ -103,12 +103,12 @@ return str_contains(Route::currentRouteName(), $string );
 
 <div id="admin-layout">
     <aside id="admin-sidebar">
-        <div class="card">
-            <div class="card-header">
+        <div class="card {{ $routeName == 'admin.dashboard.home' ? 'border-primary' : ''}}">
+            <div class="card-header {{ $routeName == 'admin.dashboard.home' ? 'text-primary' : ''}}">
                 Dashboard
             </div>
             <div class="list-group list-group-flush">
-                <a href="{{route('admin.dashboard.home')}}" class="list-group-item list-group-item-action">Home</a>
+                <a href="{{route('admin.dashboard.home')}}" class="list-group-item list-group-item-action {{routeNameContains('admin.dashboard.home') ? 'active' : ''  }}">Home</a>
             </div>
         </div>
         {{-- Route::currentRouteName() --}}
