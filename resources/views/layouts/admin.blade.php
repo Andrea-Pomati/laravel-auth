@@ -117,8 +117,8 @@ return str_contains(Route::currentRouteName(), $string );
                 Progetti
             </div>
             <div class="list-group list-group-flush">
-                <a href="{{route('admin.projects.index')}}" class="list-group-item list-group-item-action">Tutti i progetti</a>
-                <a href="{{route('admin.projects.create')}}" class="list-group-item list-group-item-action">Aggiungi un progetto</a>
+                <a href="{{route('admin.projects.index')}}" class="list-group-item list-group-item-action {{routeNameContains('projects.index') ? 'active' : ''  }}">Tutti i progetti</a>
+                <a href="{{route('admin.projects.create')}}" class="list-group-item list-group-item-action {{routeNameContains('projects.create') ? 'active' : ''  }}">Aggiungi un progetto</a>
             </div>
         </div>
     </aside>
